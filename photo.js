@@ -10,7 +10,7 @@ function getPhotosForSearch(searchTerms) {
 var url = `${FLICKR_API_URL}${FLICKR_API_KEY}&text=${searchTerms}`;
 return(fetch(url)
     .then(response => response.json()) 
-    .then(data => data.photos.photo) // t
+    .then(data => data.photos.photo) 
     .then(function(photo) {
      //tell FLickr what info we want and how we want it; from the data.photos.photo array (example at https://api.flickr.com/services/rest/?method=flickr.photos.search&format=json&nojsoncallback=1&api_key=8284bf026642da8da2022909704338cb&text=dog)
             return photo.map(function(photo) {

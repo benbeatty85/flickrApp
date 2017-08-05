@@ -9,21 +9,61 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    text-transform: capitalize;
+    background-color: #BDB76B;
+    width: 100%;
+}
+
+#header-title {
+    font-size: 60px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#header-title span {
+    font-size: 70px;
+    font-family: 'Yellowtail', cursive;
+    padding-right: 15px;
+    animation: round 1s linear infinite;
+}
+
+#header-paragraph {
+    font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#header-paragraph span {
+    border-bottom: thin solid #000;
 }
 
 #background-img {
-    background: url('background.jpeg') no-repeat center;
+    background: url('florence.jpeg') no-repeat center;
     background-size: cover;
-    position: fixed;
     max-width: 100%;
     max-height: 100%;
-    height: 600px;
+    height: 300px;
     width: 100%;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 800px;
+    background-color: pink;
+}
+
+#btn {
+    background-color: green;
+    width: 100px;
+    border: 3px solid black;
 }
 
 .flickr-photos {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 300px;
 }
 
 .flickr-photos img {
@@ -34,18 +74,6 @@
 
 .main-app {
     margin-top: 500px;
-}
-.search-form {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 200px;
-}
-
-#btn {
-    background-color: green;
-    width: 100px;
-    border: 3px solid black;
 }
 
 
